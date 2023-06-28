@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ugroup.Vistas.Login"
+             NavigationPage.HasNavigationBar="False">
+    <StackLayout Orientation="Vertical"
+                 BackgroundColor="#AED6F1">
+        <Frame VerticalOptions="FillAndExpand"
+               Margin="20,20,20,0"
+               CornerRadius="20"
+               HasShadow="False">
+            <StackLayout>
+                <Image Source="https://i.ibb.co/c3SXFmw/uGroup3.png"
+                       VerticalOptions="Start"
+                       Margin="0,10,10,60"
+                       HeightRequest="150" />
+                <!-- Entry Email -->
+                <Frame VerticalOptions="Center"
+                       Margin="0,0,0,10"
+                       CornerRadius="15"
+                       BorderColor="#C2C2C2"
+                       Padding="7">
+                    <Entry Keyboard="Email"
+                           Placeholder="Email"
+                           PlaceholderColor="LightGray"
+                           TextColor="Black"
+                           x:Name="CorreoLogin"></Entry>
+                </Frame>
+                <!-- Entry Contraseña -->
+                <Frame VerticalOptions="Center"
+                       Margin="0,0,0,10"
+                       CornerRadius="15"
+                       BorderColor="#C2C2C2"
+                       Padding="7">
+                    <Entry Keyboard="Default"
+                           Placeholder="Contraseña"
+                           IsPassword="True"
+                           PlaceholderColor="LightGray"
+                           TextColor="Black"
+                           x:Name="ContrasenaLogin"></Entry>
+                </Frame>
+                <!-- Boton Inicio Sesión -->
+                <Button Text="Iniciar Sesión"
+                        BackgroundColor="#2980B9"
+                        TextColor="#FFFFFF"
+                        CornerRadius="10"
+                        TextTransform="None"
+                        FontSize="Medium"
+                        FontAttributes="Bold"
+                        Margin="0, 30,0,50"
+                        x:Name="btnLogin"
+                        Clicked="btnLogin_Clicked" />
+                <!-- Botones Registro y Olvidar Contraseña -->
+                <StackLayout Orientation="Vertical"
+                             VerticalOptions="Center">
+                    <Button Text="Registrarse"
+                            TextTransform="None"
+                            TextColor="#2980B9"
+                            FontSize="17"
+                            FontAttributes="Bold"
+                            BorderWidth="0"
+                            BackgroundColor="Transparent"
+                            x:Name="btnRegistro"
+                            Clicked="btnRegistro_Clicked"
+                            HeightRequest="60" />
+                    <Button Text="Olvide mi contraseña"
+                            TextTransform="None"
+                            TextColor="#2980B9"
+                            FontSize="17"
+                            FontAttributes="Bold"
+                            BorderWidth="0"
+                            BackgroundColor="Transparent"
+                            x:Name="btnOlvidarContrasena"
+                            Clicked="btnOlvidarContrasena_Clicked"
+                            HeightRequest="60" />
+                </StackLayout>
+            </StackLayout>
+        </Frame>
+        <!-- Texto Ugroup final -->
+        <Label HorizontalTextAlignment="Center"
+               Text="UGROUP"
+               TextTransform="Uppercase"
+               FontAttributes="Bold"
+               FontSize="17" />
+    </StackLayout>
+</ContentPage>

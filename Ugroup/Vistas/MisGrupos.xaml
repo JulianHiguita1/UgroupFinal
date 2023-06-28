@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Ugroup.Vistas.MisGrupos"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Mis Grupos">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <ScrollView>
+            <Grid
+                ColumnDefinitions="3*, 1*"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand">
+                <VerticalStackLayout x:Name="Layout" Grid.Column="0" />
+                <StackLayout
+                    Grid.Column="1"
+                    Margin="0,400,30,40"
+                    HorizontalOptions="End"
+                    VerticalOptions="End" />
+            </Grid>
+        </ScrollView>
+        <Button
+            x:Name="btnCrearGrupo"
+            Grid.Row="0"
+            Margin="0,0,20,20"
+            Padding="0"
+            BackgroundColor="#6215B0"
+            Clicked="btnCrearGrupo_Clicked"
+            CornerRadius="50"
+            FontSize="40"
+            HeightRequest="70"
+            HorizontalOptions="End"
+            Text="+"
+            VerticalOptions="End"
+            WidthRequest="70" />
+    </Grid>
+</ContentPage>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ugroup.Vistas.Unirsegrupo"
+             Title="Unirsegrupo">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+            <Label x:Name="idGrupoLabel" HorizontalOptions="Center" VerticalOptions="Center" FontSize="Large" FontAttributes="Bold" />
+            <Label Text="¿Desea unirse al grupo?" FontSize="20" HorizontalOptions="Center" />
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Button Text="Sí" Clicked="Si_Clicked" />
+                <Button Text="No" Clicked="No_Clicked" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

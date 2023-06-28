@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ugroup.Vistas.CrearPublicacion"
+             Title="CrearPublicacion">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#AECEF2">
+            <Frame HorizontalOptions="Center"
+                   Margin="0,50,0,10"
+                   WidthRequest="300"
+                   Padding="10"
+                   HasShadow="False">
+                <Label Text="CREAR PUBLICACION"
+                       FontSize="25"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"></Label>
+            </Frame>
+            <Frame Margin="10,0,10,0"
+                   WidthRequest="300"
+                   BorderColor="#D5DBDB"
+                   HasShadow="False">
+                <StackLayout>
+                    <Label Text="Titulo"
+                           FontAttributes="Bold" />
+                    <Frame VerticalOptions="Center"
+                           Margin="0,0,0,10"
+                           CornerRadius="15"
+                           BorderColor="#D5DBDB"
+                           Padding="7">
+                        <Entry Keyboard="Default"
+                               Placeholder="Nombre"
+                               PlaceholderColor="#8E99A6"
+                               TextColor="Black"
+                               x:Name="tituloPubli" />
+                    </Frame>
+                    <Label Text="Expresate"
+                           FontAttributes="Bold" />
+                    <Frame VerticalOptions="Center"
+                           Margin="0,0,0,10"
+                           CornerRadius="15"
+                           BorderColor="#D5DBDB"
+                           Padding="7">
+                        <Entry Placeholder="Descripcion"
+                               PlaceholderColor="#8E99A6"
+                               TextColor="Black"
+                               x:Name="descripcionPubli" />
+                    </Frame>
+                    <Label Text="Seleccionar Foto"
+                           FontAttributes="Bold" />
+                    <Button Text="Foto"
+                            x:Name="BtnFoto"
+                            Clicked="Foto_Clicked"/>
+                    <Image x:Name="imagenPubli"
+                           WidthRequest="100"
+                           HeightRequest="100"/>
+                    <Button Text="Publicar"
+                            Margin="0,20,0,5"
+                            CornerRadius="10"
+                            BackgroundColor="#007AFF"
+                            TextColor="#FFFFFF"
+                            x:Name="btnPublicar"
+                            Clicked="btnPublicar_Clicked" />
+                    <ScrollView>
+                        <StackLayout x:Name="publisLayout" />
+                    </ScrollView>
+                </StackLayout>
+            </Frame>
+            <Label HorizontalOptions="Center"
+                   Text="UGROUP"
+                   TextTransform="Uppercase"
+                   FontAttributes="Bold"
+                   FontSize="17"
+                   Margin="0,90,0,0" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

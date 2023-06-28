@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Class="Ugroup.Vistas.Home"
+             xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Ugroup.Vistas"
+             BackgroundColor="#ABDEFB">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <ScrollView>
+            <Grid VerticalOptions="FillAndExpand"
+                  HorizontalOptions="FillAndExpand"
+                  ColumnDefinitions="3*, 1*">
+                <VerticalStackLayout x:Name="LayoutPublis"
+                                     Grid.Column="0"></VerticalStackLayout>
+                <StackLayout VerticalOptions="End"
+                             HorizontalOptions="End"
+                             Margin="0,400,30,40"
+                             Grid.Column="1">
+                    
+                </StackLayout>
+            </Grid>
+        </ScrollView>
+        <Button Text="+"
+                FontSize="40"
+                Margin="0,0,20,20"
+                Padding="0"
+                BackgroundColor="#6215B0"
+                VerticalOptions="End"
+                HorizontalOptions="End"
+                CornerRadius="50"
+                WidthRequest="70"
+                HeightRequest="70"
+                x:Name="btnCrearPublicacion"
+                Clicked="btnCrearPublicacion_Clicked" />
+    </Grid>
+    
+</ContentPage>

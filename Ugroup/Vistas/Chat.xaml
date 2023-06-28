@@ -1,0 +1,55 @@
+﻿<ContentPage
+    x:Class="Ugroup.Vistas.Chat"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:custom="clr-namespace:Ugroup.Controles"
+    Title="Chat">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <ScrollView
+                x:Name="scroll"
+                BackgroundColor="#f8fafc"
+                VerticalOptions="FillAndExpand">
+                <StackLayout x:Name="chatLayout" VerticalOptions="EndAndExpand">
+                    <!--  Aquí se mostrarán los mensajes del chat  -->
+                </StackLayout>
+            </ScrollView>
+            <Border
+                Margin="5,4,5,6"
+                Padding="7"
+                BackgroundColor="#cbd5e1"
+                StrokeShape="RoundRectangle 10"
+                StrokeThickness="0">
+                <StackLayout Orientation="Horizontal">
+                    <Entry
+                        x:Name="mensajeEntry"
+                        Margin="5,6,0,0"
+                        FontFamily="PR"
+                        HorizontalOptions="FillAndExpand"
+                        Placeholder="Escribe un mensaje..."
+                        PlaceholderColor="#475569" />
+                    <StackLayout Margin="0,5,0,0"
+                                 Orientation="Horizontal">
+                        
+                        <custom:ToggleButton
+                            Margin="0,0,5,0"
+                            Clicked="pruebaGPS"
+                            ColorBG="#cbd5e1"
+                            HeightRequest="42"
+                            Picture="gps"
+                            WidthRequest="42" />
+                        <custom:ToggleButton
+                            Clicked="enviarMensaje"
+                            ColorBG="#cbd5e1"
+                            HeightRequest="42"
+                            Picture="enviar"
+                            WidthRequest="42" />
+                        
+                    </StackLayout>
+
+                </StackLayout>
+            </Border>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

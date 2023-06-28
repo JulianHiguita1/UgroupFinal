@@ -1,0 +1,107 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ugroup.Vistas.Registro"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="#ABDEFB">
+    <StackLayout Orientation="Vertical">
+        <Frame CornerRadius="20"
+               Margin="20,20,20,0">
+            <StackLayout>
+                <!--Entry Nombre-->
+                <Frame VerticalOptions="Center"
+                       Margin="0,0,0,10"
+                       CornerRadius="15"
+                       BorderColor="#C2C2C2"
+                       Padding="7">
+                    <Entry Keyboard="Default"
+                           Placeholder="Nombre"
+                           PlaceholderColor="LightGray"
+                           TextColor="Black"
+                           x:Name="nomRegistro"></Entry>
+                </Frame>
+                <!--Entry Apellido-->
+                <Frame VerticalOptions="Center"
+                       Margin="0,0,0,10"
+                       CornerRadius="15"
+                       BorderColor="#C2C2C2"
+                       Padding="7">
+                    <Entry Keyboard="Default"
+                           Placeholder="Apellido"
+                           PlaceholderColor="LightGray"
+                           TextColor="Black"
+                           x:Name="apellidoRegistro"></Entry>
+                </Frame>
+                <!--Entry Email-->
+                <Frame VerticalOptions="Center"
+                       Margin="0,0,0,10"
+                       CornerRadius="15"
+                       BorderColor="#C2C2C2"
+                       Padding="7">
+                    <Entry Keyboard="Email"
+                           Placeholder="Email"
+                           PlaceholderColor="LightGray"
+                           TextColor="Black"
+                           x:Name="email"></Entry>
+                </Frame>
+                <!--Entry Contraseña-->
+                <Frame VerticalOptions="Center"
+                       Margin="0,0,0,10"
+                       CornerRadius="15"
+                       BorderColor="#C2C2C2"
+                       Padding="7">
+                    <Entry Keyboard="Default"
+                           Placeholder="Contraseña"
+                           PlaceholderColor="LightGray"
+                           TextColor="Black"
+                           IsPassword="True"
+                           x:Name="contraseña"></Entry>
+                </Frame>
+                <!--Entry Repetir Contraseña-->
+                <Frame VerticalOptions="Center"
+                       Margin="0,0,0,10"
+                       CornerRadius="15"
+                       BorderColor="#C2C2C2"
+                       Padding="7">
+                    <Entry Keyboard="Default"
+                           Placeholder="Repetir Contraseña"
+                           PlaceholderColor="LightGray"
+                           TextColor="Black"
+                           IsPassword="True"
+                           x:Name="Rcontraseña"></Entry>
+                </Frame>
+                <!--Entry Fecha-->
+                <Frame VerticalOptions="Center"
+                       Margin="0,0,0,10"
+                       CornerRadius="15"
+                       BorderColor="#C2C2C2"
+                       Padding="7">
+                    <DatePicker Format="d"
+                                TextColor="Black"
+                                x:Name="Fnacimiento"/>
+                </Frame>
+                <!--Botón registrarse-->
+                <Button Text="Registrarse"
+                        Margin="0,20,0,5"
+                        CornerRadius="10"
+                        BackgroundColor="#007AFF"
+                        TextColor="#FFFFFF"
+                        x:Name="btnRegistrarse"
+                        Clicked="btnRegistrarse_Clicked"/>
+                <!--Botón Olvidar Contraseña-->
+                <Button Text="Volver"
+                        Margin="0,5,0,20"
+                        CornerRadius="10"
+                        BackgroundColor="#007AFF"
+                        TextColor="#FFFFFF"
+                        x:Name="btnVolverlogin"
+                        Clicked="btnVolverlogin_Clicked"/>
+            </StackLayout>
+        </Frame>
+        <Label HorizontalTextAlignment="Center"
+               Margin="0,30,0,0"
+               Text="UGROUP"
+               TextTransform="Uppercase"
+               FontAttributes="Bold"
+               FontSize="17" />
+    </StackLayout>
+</ContentPage>

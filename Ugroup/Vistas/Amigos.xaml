@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Ugroup.Vistas.Amigos"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#ABDEFB">
+
+            <StackLayout Orientation="Horizontal">
+
+                <ImageButton
+                    Margin="0,0,150,0"
+                    BackgroundColor="Transparent"
+                    BorderWidth="0"
+                    HeightRequest="50"
+                    Source="boton.png" />
+
+                <Button
+                    Margin="0,0,0,0"
+                    BackgroundColor="Transparent"
+                    BorderWidth="0"
+                    FontAttributes="Bold"
+                    Text="Chats"
+                    TextTransform="None" />
+
+                <ImageButton
+                    Margin="120,0,0,0"
+                    BackgroundColor="Transparent"
+                    BorderWidth="0"
+                    HeightRequest="50"
+                    Source="boton.png" />
+
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+
+                <Frame
+                    Margin="50,0,0,0"
+                    Padding="0"
+                    CornerRadius="10"
+                    HasShadow="False"
+                    HeightRequest="20"
+                    WidthRequest="350">
+
+                    <Entry
+                        Margin="0,0,0,0"
+                        Keyboard="Default"
+                        Placeholder="Buscar amigos...."
+                        WidthRequest="300" />
+
+                </Frame>
+
+                <ImageButton
+                    Margin="0,0,0,0"
+                    BackgroundColor="Transparent"
+                    BorderWidth="0"
+                    HeightRequest="70"
+                    Source="boton.png" />
+
+            </StackLayout>
+
+            <StackLayout
+                Margin="10,10,0,0"
+                HorizontalOptions="StartAndExpand"
+                Orientation="Horizontal">
+
+                <Frame
+                    Padding="0"
+                    CornerRadius="70"
+                    HasShadow="False"
+                    HeightRequest="30"
+                    HorizontalOptions="FillAndExpand"
+                    WidthRequest="45">
+                    <Image Source="foto_perfil.jpg" />
+
+                </Frame>
+
+                <Frame Padding="0" CornerRadius="70">
+
+                    <StackLayout
+                        Margin="0,15,0,0"
+                        BackgroundColor="White"
+                        WidthRequest="380">
+
+                        <Label
+                            Margin="30,-6,0,0"
+                            FontAttributes="Bold"
+                            FontSize="11"
+                            Text="Santiago Flórez Echavarría" />
+
+                        <Label Margin="15,0,0,0" Text="No se, soy un mensaje" />
+
+                    </StackLayout>
+
+                </Frame>
+
+            </StackLayout>
+
+            <StackLayout
+                Margin="10,10,0,0"
+                HorizontalOptions="StartAndExpand"
+                Orientation="Horizontal">
+
+                <Frame
+                    Padding="0"
+                    CornerRadius="70"
+                    HasShadow="False"
+                    HeightRequest="30"
+                    HorizontalOptions="FillAndExpand"
+                    WidthRequest="45">
+                    <Image Source="foto_perfil.jpg" />
+
+                </Frame>
+
+                <Frame Padding="0" CornerRadius="70">
+
+                    <StackLayout
+                        Margin="0,15,0,0"
+                        BackgroundColor="White"
+                        WidthRequest="380">
+
+                        <Label
+                            Margin="30,-6,0,0"
+                            FontAttributes="Bold"
+                            FontSize="11"
+                            Text="Santiago Flórez Echavarría" />
+
+                        <Label Margin="15,0,0,0" Text="No se, soy un mensaje" />
+
+                    </StackLayout>
+
+                </Frame>
+
+            </StackLayout>
+
+
+
+        </StackLayout>
+
+    </ContentPage.Content>
+
+</ContentPage>

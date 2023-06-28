@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ugroup.Controles.Chat">
+    <VerticalStackLayout HorizontalOptions="End"
+                         x:Name="MensajePropio">
+        <Label Text="Juanito"
+               FontSize="10"
+               Margin="10,0,0,0"></Label>
+        <Frame Margin="0,0,0,5"
+               CornerRadius="7"
+               BackgroundColor="#1D80F0"
+               MaximumWidthRequest="270"
+               HasShadow="False"
+               Padding="2"
+               VerticalOptions="Start"
+               HorizontalOptions="End"
+               x:Name="Caja">
+            <Label TextColor="White"
+                   VerticalTextAlignment="Center"
+                   Margin="10,10,10,10"
+                   LineBreakMode="WordWrap"
+                   x:Name="MessageDesign"></Label>
+        </Frame>
+    </VerticalStackLayout>
+</ContentView>

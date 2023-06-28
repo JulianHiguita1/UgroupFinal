@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Class="Ugroup.Vistas.CrearGrupos"
+             xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="crearGrupos">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#AECEF2">
+            <Frame HorizontalOptions="Center"
+                   Margin="0,100,0,10"
+                   WidthRequest="300"
+                   Padding="10"
+                   HasShadow="False">
+                <Label Text="CREAR GRUPO"
+                       FontSize="25"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"></Label>
+            </Frame>
+            <Frame Margin="10,0,10,0"
+                   WidthRequest="300"
+                   BorderColor="#D5DBDB"
+                   HasShadow="False">
+                <StackLayout>
+                    <Label Text="Nombre del grupo"
+                           FontAttributes="Bold" />
+                    <Frame VerticalOptions="Center"
+                           Margin="0,0,0,10"
+                           CornerRadius="15"
+                           BorderColor="#D5DBDB"
+                           Padding="7">
+                        <Entry Keyboard="Default"
+                               Placeholder="Nombre Grupo"
+                               PlaceholderColor="#8E99A6"
+                               TextColor="Black"
+                               x:Name="nombreGrupo" />
+                    </Frame>
+                    <Label Text="Descripción"
+                           FontAttributes="Bold" />
+                    <Frame VerticalOptions="Center"
+                           Margin="0,0,0,10"
+                           CornerRadius="15"
+                           BorderColor="#D5DBDB"
+                           Padding="7">
+                        <Entry Placeholder="Descripcion Grupo"
+                               PlaceholderColor="#8E99A6"
+                               TextColor="Black"
+                               x:Name="descripcionGrupo" />
+                    </Frame>
+                    <Label Text="Seleccionar tema"
+                           FontAttributes="Bold" />
+                    <Frame VerticalOptions="Center"
+                           Margin="0,0,0,10"
+                           CornerRadius="15"
+                           BorderColor="#D5DBDB"
+                           Padding="7">
+                        <Picker x:Name="temaPicker" />
+                    </Frame>
+                    <Button Text="Crear grupo"
+                            BackgroundColor="#2980B9"
+                            TextColor="#FFFFFF"
+                            CornerRadius="10"
+                            TextTransform="None"
+                            FontSize="15"
+                            FontAttributes="Bold"
+                            Margin="0, 30,0,50"
+                            x:Name="btnCrearGrupo"
+                            Clicked="CrearGrupo_Clicked" />
+                    <ScrollView>
+                        <StackLayout x:Name="gruposLayout" />
+                    </ScrollView>
+                </StackLayout>
+            </Frame>
+            <Label HorizontalOptions="Center"
+                   Text="UGROUP"
+                   TextTransform="Uppercase"
+                   FontAttributes="Bold"
+                   FontSize="17"
+                   Margin="0,90,0,0" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

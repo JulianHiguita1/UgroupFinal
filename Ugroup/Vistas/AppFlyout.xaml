@@ -1,0 +1,18 @@
+<FlyoutPage
+    x:Class="FlyoutPageSample.AppFlyout"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:FlyoutPageSample"
+    xmlns:vistas="clr-namespace:Ugroup.Vistas">
+
+    <FlyoutPage.Flyout>
+        <local:FlyoutMenuPage x:Name="flyoutPage" />
+    </FlyoutPage.Flyout>
+    <FlyoutPage.Detail>
+        <NavigationPage>
+            <x:Arguments>
+                <vistas:Home />
+            </x:Arguments>
+        </NavigationPage>
+    </FlyoutPage.Detail>
+</FlyoutPage>

@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Ugroup</name>
+    </assembly>
+    <members>
+        <member name="E:Ugroup.Controles.ToggleButton.Clicked">
+            <summary>
+            Evento Click sobre Subtitulo
+            </summary>
+        </member>
+        <member name="P:Ugroup.Controles.ToggleButton.Picture">
+            <summary>
+            Obtiene o establece la imagen del boton
+            </summary>
+        </member>
+        <member name="F:Ugroup.Controles.ToggleButton.SourceProperty">
+            <summary>
+            Propiedad 'Picture'
+            </summary>
+        </member>
+        <member name="F:Ugroup.Controles.ToggleButton.ColorProperty">
+            <summary>
+            Propiedad Color de fondo
+            </summary>
+        </member>
+        <member name="M:Ugroup.Controles.ToggleButton.SubmitClick(System.Object,System.EventArgs)">
+            <summary>
+            Envia el evento Click
+            </summary>
+        </member>
+        <member name="T:Ugroup.Extensiones.ContextPageExtensions">
+            <summary>
+            Extensiones para ContextPages
+            </summary>
+        </member>
+        <member name="M:Ugroup.Extensiones.ContextPageExtensions.Show(Microsoft.Maui.Controls.ContentPage)">
+            <summary>
+            Abre una nueva pagina
+            </summary>
+        </member>
+        <member name="M:Ugroup.Extensiones.ContextPageExtensions.Show(Microsoft.Maui.Controls.FlyoutPage)">
+            <summary>
+            Abre una nueva pagina
+            </summary>
+        </member>
+        <member name="M:Ugroup.Extensiones.ContextPageExtensions.Close(Microsoft.Maui.Controls.ContentPage)">
+            <summary>
+            Cierra la ventana una nueva ventana
+            </summary>
+        </member>
+        <member name="M:Ugroup.Platforms.Conversor.ToBase64(Microsoft.Maui.Controls.Image)">
+            <summary>
+            Convierte a base64
+            </summary>
+        </member>
+        <member name="M:Ugroup.Platforms.Abstraccion.Decode(System.String)">
+            <summary>
+            Retroa una imagen
+            </summary>
+        </member>
+        <member name="M:Ugroup.Platforms.Abstraccion.ToBase64(Microsoft.Maui.Controls.Image)">
+            <summary>
+            Convierte una imagen a Base64
+            </summary>
+            <param name="image">Imagen a convertir</param>
+        </member>
+        <member name="M:Ugroup.Servicios.gps.CalculateDistance(Microsoft.Maui.Devices.Sensors.Location,Microsoft.Maui.Devices.Sensors.Location)">
+            <summary>
+            Calcula la distancia entre dos ubicaciones en KM
+            </summary>
+        </member>
+        <member name="M:Ugroup.Servicios.gps.GetLocation">
+            <summary>
+            Obtiene la ubicacion actual
+            </summary>
+        </member>
+        <member name="M:Ugroup.Servicios.gps.GetPlace(System.Double,System.Double)">
+            <summary>
+            Obtiene la ubicacion actual
+            </summary>
+        </member>
+    </members>
+</doc>
